@@ -26,23 +26,32 @@ end
 puts "5 skills created."
 
 8.times do |portfolio_item|
-    Portfolio.create!(
-      title: "Portfolio title #{portfolio_item}",
-      subtitle: "Ruby on Rails",
-      body: "yes.",
-      main_image: "http://via.placeholder.com/700x400",
-      thumb_image: "http://via.placeholder.com/350x200"
+  Portfolio.create!(
+    title: "Portfolio title #{portfolio_item}",
+    subtitle: "Ruby on Rails",
+    body: "yes.",
+    main_image: "http://via.placeholder.com/700x400",
+    thumb_image: "http://via.placeholder.com/350x200"
   )
 end
 
 1.times do |portfolio_item|
-    Portfolio.create!(
-      title: "Portfolio title #{portfolio_item}",
-      subtitle: "Angular",
-      body: "yes.",
-      main_image: "http://via.placeholder.com/700x400",
-      thumb_image: "http://via.placeholder.com/350x200"
+  Portfolio.create!(
+    title: "Portfolio title #{portfolio_item}",
+    subtitle: "Angular",
+    body: "yes.",
+    main_image: "http://via.placeholder.com/700x400",
+    thumb_image: "http://via.placeholder.com/350x200"
   )
 end
 
 puts "9 portfolio items created."
+
+3.times do |technology|
+  Portfolio.last.technologies.create!(
+    name: "Technology #{technology}",
+    portfolio_id: Portfolio.last.id
+  )
+end
+
+puts "3 technology items created."
