@@ -18,7 +18,7 @@ class PortfoliosController < ApplicationController
 
     respond_to do |format|
       if @portfolio_item.save
-        format.html { redirect_to portfolios_path, notice: 'Blog was successfully created.' }
+        format.html { redirect_to portfolios_path, notice: 'Your portfolio is now live.' }
         format.json { render :show, status: :created, location: @portfolio_item }
       else
         format.html { render :new }
@@ -35,7 +35,7 @@ class PortfoliosController < ApplicationController
     
     respond_to do |format|
       if @portfolio_item.update(params.require(:portfolio).permit(:title, :subtitle, :body))
-        format.html { redirect_to portfolios_path, notice: 'Blog was successfully updated.' }
+        format.html { redirect_to portfolios_path, notice: 'Your portfolio was successfully updated.' }
       else
         format.html { render :edit }
       end
