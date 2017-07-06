@@ -1,4 +1,4 @@
-<h1 style="color: blue; font-family: Cursive; font-size: 24px">Home Page</h1>
+<h1>Hi <%= current_user.first_name if current_user %></h1>
 
 <p>Find me in app/views/pages/home.html.erb</p>
 
@@ -7,3 +7,5 @@
 
 <h1>Skills</h1>
 <%= @skills.inspect %>
+
+# 7 mins left integrate virtual attributes to extract
