@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/Deepzai/deepzai_view_tool
-  revision: 962e0a7f3e21ccbaf155a1657575de88b0ec8a24
+  revision: 947342c23ab316e093592e1134b1cc99b46262ea
   specs:
-    deepzai_view_tool (0.1.0)
+    deepzai_view_tool (0.1.1)
 
 GEM
   remote: https://rubygems.org/
@@ -144,7 +144,11 @@ GEM
     responders (2.4.0)
       actionpack (>= 4.2.0, < 5.3)
       railties (>= 4.2.0, < 5.3)
-    sass (3.4.25)
+    sass (3.5.0)
+      sass-listen (~> 3.0.7)
+    sass-listen (3.0.7)
+      rb-fsevent (>= 0.9.3)
+      rb-inotify (>= 0.9.7)
     sass-rails (5.0.6)
       railties (>= 4.0.0, < 6)
       sass (~> 3.1)
