@@ -1,9 +1,3 @@
-GIT
-  remote: https://github.com/Deepzai/deepzai_view_tool
-  revision: 947342c23ab316e093592e1134b1cc99b46262ea
-  specs:
-    deepzai_view_tool (0.1.1)
-
 GEM
   remote: https://rubygems.org/
   specs:
@@ -63,6 +57,7 @@ GEM
       execjs
     coffee-script-source (1.12.2)
     concurrent-ruby (1.0.5)
+    deepzai_view_tool (0.1.1)
     devise (4.3.0)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -196,7 +191,7 @@ DEPENDENCIES
   bootstrap (~> 4.0.0.alpha6)
   byebug
   coffee-rails (~> 4.2)
-  deepzai_view_tool!
+  deepzai_view_tool (~> 0.1.1)
   devise (~> 4.3)
   friendly_id (~> 5.1.0)
   jbuilder (~> 2.5)
