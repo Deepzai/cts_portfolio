@@ -168,6 +168,10 @@ body {
   margin-top: 88px;
 }
 
+.text-align-left {
+  text-align: left; 
+}
+
 .card-block {
   color: black;
 }
@@ -177,10 +181,29 @@ body {
 }
 
 .auth-links {
+  margin-left: 8px;
+  margin-top: 5px;
   text-align: left;
 }
 
 .auth-links a {
   color: black;
+}
+
+.register-text {
+  text-align: right;
+}
+
+.inline {
+  display: inline;
+}
+
+#copyright {
+  width: 500px;
+}
+
+.on-top {
+  position: relative;
+  z-index: 100;
 }
 
