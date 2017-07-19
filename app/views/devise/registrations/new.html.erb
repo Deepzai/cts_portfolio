@@ -40,10 +40,16 @@
         <div class="form-group">
           <%= f.submit "Sign up", class: 'btn btn-primary btn-block' %>
         </div>
-    
-        <div class="auth-links-no-margin btn btn-outline-secondary btn-block">
+      </div>
+      
+      <div class="col-md-8"></div>
+      <div class="col-md-4">
+        <small id="emailHelp" class="form-text text-muted inline register-text have-acc" onClick="renderRuby()">Already have an account?</small>
+        <small id="emailHelp" class="form-text text-muted inline register-text arrow" onClick="renderRuby()">&rarr;</small>
+        <div class="auth-link-gray register-text inline">
           <%= render "devise/shared/links" %>
         </div>
+        
       </div>
     <% end %>
   </div>

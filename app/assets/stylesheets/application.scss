@@ -164,6 +164,11 @@ body {
 /**
   *  Custom Styles
   */
+  
+.field_with_errors {
+  display: inline;
+}
+  
 .pages-contact-spacing {
   margin-top: 88px;
 }
@@ -236,4 +241,25 @@ body {
   width: 22rem;
   margin: 0 auto;
   float: none;
+}
+
+.auth-link-gray a{
+  color: #696969;
+  font-weight: bold;
+}
+
+.have-acc {
+  margin-right: 7px;
+}
+
+.arrow {
+  margin-right: 8px;
+}
+
+.alert {
+  text-transform: lowercase;
+}
+
+.alert::first-letter {
+   text-transform: uppercase;
 }
