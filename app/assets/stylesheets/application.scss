@@ -172,6 +172,14 @@ body {
   text-align: left; 
 }
 
+.text-align-center {
+  text-align: center; 
+}
+
+.text-align-right {
+  text-align: right; 
+}
+
 .card-block {
   color: black;
 }
@@ -186,7 +194,24 @@ body {
   text-align: left;
 }
 
+.auth-links-no-align {
+  margin-left: 8px;
+  margin-top: 5px;
+}
+
+.auth-links-no-margin {
+  text-align: center;
+}
+
+.auth-links-no-margin a {
+  color: black;
+}
+
 .auth-links a {
+  color: black;
+}
+
+.auth-links-no-align a {
   color: black;
 }
 
@@ -207,3 +232,8 @@ body {
   z-index: 100;
 }
 
+.login > .card {
+  width: 22rem;
+  margin: 0 auto;
+  float: none;
+}
