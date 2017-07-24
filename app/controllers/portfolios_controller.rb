@@ -8,6 +8,7 @@ class PortfoliosController < ApplicationController
   
   def index 
     @portfolio_items = Portfolio.all
+    
   end
   
   def angular
@@ -40,12 +41,13 @@ class PortfoliosController < ApplicationController
       if @portfolio_item.update(portfolio_params)
         format.html { redirect_to portfolios_path, notice: 'Your portfolio was successfully updated.' }
       else
-        format.html { render :edit }
+        format.html { redirect_to portfolios_path }
       end
     end
   end
   
   def show 
+    
   end
   
   def destroy

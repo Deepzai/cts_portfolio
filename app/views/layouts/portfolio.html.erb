@@ -15,7 +15,9 @@
   <body>
     <%= render "shared/portfolio_nav" %>
     
-    <%= render "shared/portfolio_masthead" %>
+    <% if (params[:controller] == "portfolios" && params[:action] == "index" || params[:action] == "show") %>
+      <%= render "shared/portfolio_masthead" %>
+    <% end %>
     
     <%= yield %>
     
