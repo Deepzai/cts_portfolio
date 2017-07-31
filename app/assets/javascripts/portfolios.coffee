@@ -25,5 +25,3 @@ ready = ->
   return
   
 $(document).ready ready
-
-# 20:38 left
