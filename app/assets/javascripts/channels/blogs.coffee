@@ -17,6 +17,15 @@ jQuery(document).on 'turbolinks:load', ->
     if $.trim(textarea.val()).length > 1
       App.global_chat.send_comment textarea.val(),
       comments.data('blog-id')
+    if textarea.val().length < 5 && textarea.val().length != 0
       textarea.val('')
+      textarea.attr("placeholder", "Comment length error: Must be 5-1000 characters in length")
+      textarea.focus ->
+        textarea.attr("placeholder", "")
+      textarea.blur ->
+        textarea.attr("placeholder", "Comment length error: Must be 5-1000 characters in length")
+    else 
+      textarea.val('')
+      textarea.removeAttr("placeholder")
     e.preventDefault()
     return false
